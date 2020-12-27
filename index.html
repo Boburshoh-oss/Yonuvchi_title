@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <section class="fon1">
+        <div class="matn">
+            <h1>
+                <span>I</span>
+                <span>N</span>
+                <span>T</span>
+                <span>E</span>
+                <span>L</span>
+                <span>L</span>
+                <span>I</span>
+                <span>G</span>
+                <span>E</span>
+                <span>N</span>
+                <span>T</span>
+            </h1>
+        </div>
+    </section>
+    <div class="clear-both"></div>
+    <div class="mp3">
+        <audio controls id="audioID" autoplay> 
+            <source id="audioID" src="./Friendship-Pascal_Letoublon_(Original_mix).mp3" type="audio/MPEG">
+        </audio>
+    </div>
+    <script>
+                document.addEventListener('click', musicPlay);
+                function musicPlay() {
+                    document.getElementById('audioID').play();
+                    document.removeEventListener('click', musicPlay);
+                }
+    </script>
+</body>
+</html>
